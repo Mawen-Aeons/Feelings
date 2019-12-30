@@ -9,37 +9,28 @@
 
     <ImageView
         android:id="@+id/imageViewHappy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginLeft="144dp"
-        android:layout_marginTop="48dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="220dp"
+        android:clickable="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_sentiment_satisfied_yellow_24dp" />
 
     <ImageView
-        android:id="@+id/imageViewNeutral"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="48dp"
-        app:layout_constraintStart_toEndOf="@+id/imageViewHappy"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_sentiment_neutral_green_24dp" />
-
-    <ImageView
         android:id="@+id/imageViewSad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="220dp"
         android:layout_marginEnd="149dp"
         android:layout_marginRight="149dp"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageViewNeutral"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_sentiment_dissatisfied_black_24dp" />
@@ -50,7 +41,7 @@
         android:layout_height="47dp"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="320dp"
         android:layout_marginEnd="7dp"
         android:layout_marginRight="7dp"
         android:ems="10"
@@ -60,6 +51,18 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewNeutral"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="220dp"
+        android:clickable="true"
+        app:layout_constraintStart_toEndOf="@+id/imageViewHappy"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_sentiment_neutral_green_24dp" />
 
     <Button
         android:id="@+id/buttonSave"

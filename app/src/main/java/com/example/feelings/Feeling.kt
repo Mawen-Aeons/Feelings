@@ -8,7 +8,7 @@ import java.sql.Date
 data class Feeling(
     @PrimaryKey(autoGenerate = true)  val id: Int,
     val mode: Int,
-    val created_at: Date,
+    val created_at: Long = System.currentTimeMillis(),
     val remarks: String
 
 ){
